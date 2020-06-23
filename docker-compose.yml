@@ -1,0 +1,17 @@
+version: "3.4"
+
+services:
+  golang:
+    image: golang:stretch
+    depends_on:
+      - mongo
+    environment:
+      MONGO_HOST: "mongo:27017"
+    volumes:
+      - .:/eventhorizon
+    working_dir: /eventhorizon
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

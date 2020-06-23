@@ -1,0 +1,26 @@
+language: go
+
+go:
+  - "1.14"
+
+services:
+  - docker
+
+cache:
+  directories:
+    - ${GOPATH}/pkg/mod
+
+jobs:
+  include:
+    - stage: test
+      if: type == pull_request
+      script: make test_docker
+      env:
+        - GO114MODULE=on
+
+    - stage: test_and_cover
+      name: "Test (with coverage)"
+      if: type != pull_request
+      script: make services cover publish-coverage
+      env:
+        - GO114MODULE=on
