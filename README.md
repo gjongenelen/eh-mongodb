@@ -1,7 +1,8 @@
 [![Build Status](https://travis-ci.com/gjongenelen/eh-mongodb.svg?branch=master)](https://travis-ci.com/gjongenelen/eh-mongodb)
 [![codecov](https://codecov.io/gh/gjongenelen/eh-mongodb/branch/master/graph/badge.svg)](https://codecov.io/gh/gjongenelen/eh-mongodb)
 [![GoDoc](https://godoc.org/github.com/gjongenelen/eh-mongodb?status.svg)](https://godoc.org/github.com/gjongenelen/eh-mongodb)
-[![Go Report Card](https://goreportcard.com/badge/seedboxtech/eh-dynamo)](https://goreportcard.com/report/gjongenelen/eh-mongodb)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gjongenelen/eh-mongodb)](https://goreportcard.com/report/github.com/gjongenelen/eh-mongodb)
+
 
 # eh-mongodb
 
